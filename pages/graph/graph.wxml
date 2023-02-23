@@ -1,0 +1,10 @@
+<!--pages/graph/graph.wxml-->
+<view class="imagebox">
+<image src="/image/graph/1.png"></image>
+</view>
+<view class="imagebox">
+<image src="/image/graph/2.png"></image>
+</view>
+<view class="imagebox">
+<image src="/image/graph/3.png"></image>
+</view>

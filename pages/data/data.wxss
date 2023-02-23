@@ -1,0 +1,40 @@
+/* pages/data/data.wxss */
+
+.header {
+    font-weight: 800;
+    text-align: center;
+    font-size: larger;
+    color:royalblue;
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+}
+
+.tr {
+    display: flex;
+    flex-direction: row;
+}
+
+.th, .td {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 25%;
+    text-align: center;
+    justify-content: center;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+    border-left: 1px solid #dadada;
+    border-right: 1px solid #dadada;
+}
+
+.th {
+    font-weight: 800;
+    background-color: #B3CCF4;
+}
+
+.td {
+    background-color: #edf3e9;
+}

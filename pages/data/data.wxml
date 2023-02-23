@@ -1,0 +1,192 @@
+<!--pages/data/data.wxml-->
+<rich-text class="header">
+    数据预测表格
+</rich-text>
+<scroll-view class="table">
+    <view class="tr">
+        <view class="th">序号</view>
+        <view class="th">位移s/mm</view>
+        <view class="th">荷载理论值p/N</view>
+        <view class="th">荷载模拟值p/N</view>
+    </view>
+        <view class="tr">
+        <view class="td">1</view>
+        <view class="td">0.2</view>
+        <view class="td">3.85</view>
+        <view class="td">2.85</view>
+    </view>
+    <view class="tr">
+        <view class="td">2</view>
+        <view class="td">0.4</view>
+        <view class="td">7.41</view>
+        <view class="td">8.41</view>
+    </view>
+    <view class="tr">
+        <view class="td">3</view>
+        <view class="td">0.6</view>
+        <view class="td">10.71</view>
+        <view class="td">9.71</view>
+    </view>
+    <view class="tr">
+        <view class="td">4</view>
+        <view class="td">0.8</view>
+        <view class="td">13.79</view>
+        <view class="td">14.79</view>
+    </view>
+    <view class="tr">
+        <view class="td">5</view>
+        <view class="td">1</view>
+        <view class="td">16.67</view>
+        <view class="td">15.67</view>
+    </view>
+    <view class="tr">
+        <view class="td">6</view>
+        <view class="td">1.2</view>
+        <view class="td">19.35</view>
+        <view class="td">20.35</view>
+    </view>
+    <view class="tr">
+        <view class="td">7</view>
+        <view class="td">1.4</view>
+        <view class="td">21.88</view>
+        <view class="td">20.88</view>
+    </view>
+    <view class="tr">
+        <view class="td">8</view>
+        <view class="td">1.6</view>
+        <view class="td">24.24</view>
+        <view class="td">25.24</view>
+    </view>
+    <view class="tr">
+        <view class="td">9</view>
+        <view class="td">1.8</view>
+        <view class="td">26.47</view>
+        <view class="td">25.47</view>
+    </view>
+    <view class="tr">
+        <view class="td">10</view>
+        <view class="td">2</view>
+        <view class="td">28.57</view>
+        <view class="td">29.57</view>
+    </view>
+    <view class="tr">
+        <view class="td">11</view>
+        <view class="td">2.2</view>
+        <view class="td">30.56</view>
+        <view class="td">29.56</view>
+    </view>
+    <view class="tr">
+        <view class="td">12</view>
+        <view class="td">2.4</view>
+        <view class="td">32.43</view>
+        <view class="td">33.43</view>
+    </view>
+    <view class="tr">
+        <view class="td">13</view>
+        <view class="td">2.6</view>
+        <view class="td">34.21</view>
+        <view class="td">33.21</view>
+    </view>
+    <view class="tr">
+        <view class="td">14</view>
+        <view class="td">2.8</view>
+        <view class="td">35.9</view>
+        <view class="td">36.9</view>
+    </view>
+    <view class="tr">
+        <view class="td">15</view>
+        <view class="td">3</view>
+        <view class="td">37.5</view>
+        <view class="td">36.5</view>
+    </view>
+    <view class="tr">
+        <view class="td">16</view>
+        <view class="td">3.2</view>
+        <view class="td">39.02</view>
+        <view class="td">40.02</view>
+    </view>
+    <view class="tr">
+        <view class="td">17</view>
+        <view class="td">3.4</view>
+        <view class="td">40.48</view>
+        <view class="td">39.48</view>
+    </view>
+    <view class="tr">
+        <view class="td">18</view>
+        <view class="td">3.6</view>
+        <view class="td">41.86</view>
+        <view class="td">42.86</view>
+    </view>
+    <view class="tr">
+        <view class="td">19</view>
+        <view class="td">3.8</view>
+        <view class="td">43.18</view>
+        <view class="td">42.18</view>
+    </view>
+    <view class="tr">
+        <view class="td">20</view>
+        <view class="td">4</view>
+        <view class="td">44.44</view>
+        <view class="td">45.44</view>
+    </view>
+    <view class="tr">
+        <view class="td">21</view>
+        <view class="td">4.2</view>
+        <view class="td">45.65</view>
+        <view class="td">44.65</view>
+    </view>
+    <view class="tr">
+        <view class="td">22</view>
+        <view class="td">4.4</view>
+        <view class="td">46.81</view>
+        <view class="td">47.81</view>
+    </view>
+    <view class="tr">
+        <view class="td">23</view>
+        <view class="td">4.6</view>
+        <view class="td">47.92</view>
+        <view class="td">46.92</view>
+    </view>
+    <view class="tr">
+        <view class="td">24</view>
+        <view class="td">4.8</view>
+        <view class="td">48.98</view>
+        <view class="td">49.98</view>
+    </view>
+    <view class="tr">
+        <view class="td">25</view>
+        <view class="td">5</view>
+        <view class="td">50</view>
+        <view class="td">49</view>
+    </view>
+    <view class="tr">
+        <view class="td">26</view>
+        <view class="td">5.2</view>
+        <view class="td">50.98</view>
+        <view class="td">51.98</view>
+    </view>
+    <view class="tr">
+        <view class="td">27</view>
+        <view class="td">5.4</view>
+        <view class="td">51.92</view>
+        <view class="td">50.92</view>
+    </view>
+    <view class="tr">
+        <view class="td">28</view>
+        <view class="td">5.6</view>
+        <view class="td">52.83</view>
+        <view class="td">53.83</view>
+    </view>
+    <view class="tr">
+        <view class="td">29</view>
+        <view class="td">5.8</view>
+        <view class="td">53.7</view>
+        <view class="td">52.7</view>
+    </view>
+    <view class="tr">
+        <view class="td">30</view>
+        <view class="td">6</view>
+        <view class="td">54.55</view>
+        <view class="td">55.55</view>
+    </view>
+</scroll-view>

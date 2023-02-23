@@ -1,0 +1,8 @@
+<!--pages/home/home.wxml-->
+<view class="imagebox">
+    <image class="background" src="/image/home/bg.png"></image>
+</view>
+
+<view class="header" style="white-space:pre-wrap">
+    <rich-text class="text">基于反演分析与正演计算的\n土工智能安全预警系统</rich-text>
+</view>

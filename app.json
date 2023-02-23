@@ -1,0 +1,45 @@
+{
+    "pages": [
+        "pages/home/home",
+        "pages/about/about",
+        "pages/data/data",
+        "pages/graph/graph"
+    ],
+    "window": {
+        "backgroundTextStyle": "light",
+        "navigationBarBackgroundColor": "#fff",
+        "navigationBarTitleText": "土工智能安全预警系统",
+        "navigationBarTextStyle": "black"
+    },
+    "tabBar": {
+        "selectedColor": "#C00000",
+        "list": [
+            {
+                "pagePath": "pages/home/home",
+                "text": "首页",
+                "iconPath": "image/tabbar/home.png",
+                "selectedIconPath": "image/tabbar/home-activated.png"
+            },
+            {
+                "pagePath": "pages/data/data",
+                "text": "数据",
+                "iconPath": "image/tabbar/data.png",
+                "selectedIconPath": "image/tabbar/data-activated.png"
+            },
+            {
+                "pagePath": "pages/graph/graph",
+                "text": "图表",
+                "iconPath": "image/tabbar/graph.png",
+                "selectedIconPath": "image/tabbar/graph-activated.png"
+            },
+            {
+                "pagePath": "pages/about/about",
+                "text": "关于",
+                "iconPath": "image/tabbar/about.png",
+                "selectedIconPath": "image/tabbar/about-activated.png"
+            }
+        ]
+    },
+    "style": "v2",
+    "sitemapLocation": "sitemap.json"
+}
