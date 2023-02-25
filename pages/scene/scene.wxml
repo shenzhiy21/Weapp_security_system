@@ -1,0 +1,6 @@
+<!--pages/graph/graph.wxml-->
+
+<view class="camera-view">
+    <image src="/image/camera.png" mode="aspectFit"></image>
+    <text class="camera-text">即将支持模型场景监控</text>
+</view>

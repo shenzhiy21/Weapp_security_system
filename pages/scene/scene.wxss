@@ -2,8 +2,16 @@
 page {
     height: 100%;
 }
-.imagebox {
+
+.camera-view {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
+}
+
+.camera-text {
+    margin-top: 20px;
+    font-size: larger;
 }

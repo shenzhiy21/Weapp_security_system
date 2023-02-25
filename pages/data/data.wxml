@@ -1,192 +1,65 @@
 <!--pages/data/data.wxml-->
-<rich-text class="header">
-    数据预测表格
-</rich-text>
-<scroll-view class="table">
+<view class="header">
+    <rich-text class="header-text">数据呈现</rich-text>
+    <picker mode="selector" range="{{days}}" range-key="name" value="{{currentDay}}" bindchange="changeDay">
+        <view class="header-picker">
+            <text>日期：{{days[currentDay].name}}</text>
+        </view>
+    </picker>
+</view>
+<view class="box-header" data-box-index="0" bindtap="tapBoxHeader" >
+    <text>原始数据</text>
+    <text class="category">(简单边坡)</text>
+</view>
+<scroll-view wx:if="{{boxesVisible[0]}}" class="table" scroll-y>
     <view class="tr">
         <view class="th">序号</view>
         <view class="th">位移s/mm</view>
         <view class="th">荷载理论值p/N</view>
         <view class="th">荷载模拟值p/N</view>
     </view>
-        <view class="tr">
-        <view class="td">1</view>
-        <view class="td">0.2</view>
-        <view class="td">3.85</view>
-        <view class="td">2.85</view>
-    </view>
-    <view class="tr">
-        <view class="td">2</view>
-        <view class="td">0.4</view>
-        <view class="td">7.41</view>
-        <view class="td">8.41</view>
-    </view>
-    <view class="tr">
-        <view class="td">3</view>
-        <view class="td">0.6</view>
-        <view class="td">10.71</view>
-        <view class="td">9.71</view>
-    </view>
-    <view class="tr">
-        <view class="td">4</view>
-        <view class="td">0.8</view>
-        <view class="td">13.79</view>
-        <view class="td">14.79</view>
-    </view>
-    <view class="tr">
-        <view class="td">5</view>
-        <view class="td">1</view>
-        <view class="td">16.67</view>
-        <view class="td">15.67</view>
-    </view>
-    <view class="tr">
-        <view class="td">6</view>
-        <view class="td">1.2</view>
-        <view class="td">19.35</view>
-        <view class="td">20.35</view>
-    </view>
-    <view class="tr">
-        <view class="td">7</view>
-        <view class="td">1.4</view>
-        <view class="td">21.88</view>
-        <view class="td">20.88</view>
-    </view>
-    <view class="tr">
-        <view class="td">8</view>
-        <view class="td">1.6</view>
-        <view class="td">24.24</view>
-        <view class="td">25.24</view>
-    </view>
-    <view class="tr">
-        <view class="td">9</view>
-        <view class="td">1.8</view>
-        <view class="td">26.47</view>
-        <view class="td">25.47</view>
-    </view>
-    <view class="tr">
-        <view class="td">10</view>
-        <view class="td">2</view>
-        <view class="td">28.57</view>
-        <view class="td">29.57</view>
-    </view>
-    <view class="tr">
-        <view class="td">11</view>
-        <view class="td">2.2</view>
-        <view class="td">30.56</view>
-        <view class="td">29.56</view>
-    </view>
-    <view class="tr">
-        <view class="td">12</view>
-        <view class="td">2.4</view>
-        <view class="td">32.43</view>
-        <view class="td">33.43</view>
-    </view>
-    <view class="tr">
-        <view class="td">13</view>
-        <view class="td">2.6</view>
-        <view class="td">34.21</view>
-        <view class="td">33.21</view>
-    </view>
-    <view class="tr">
-        <view class="td">14</view>
-        <view class="td">2.8</view>
-        <view class="td">35.9</view>
-        <view class="td">36.9</view>
-    </view>
-    <view class="tr">
-        <view class="td">15</view>
-        <view class="td">3</view>
-        <view class="td">37.5</view>
-        <view class="td">36.5</view>
-    </view>
-    <view class="tr">
-        <view class="td">16</view>
-        <view class="td">3.2</view>
-        <view class="td">39.02</view>
-        <view class="td">40.02</view>
-    </view>
-    <view class="tr">
-        <view class="td">17</view>
-        <view class="td">3.4</view>
-        <view class="td">40.48</view>
-        <view class="td">39.48</view>
-    </view>
-    <view class="tr">
-        <view class="td">18</view>
-        <view class="td">3.6</view>
-        <view class="td">41.86</view>
-        <view class="td">42.86</view>
-    </view>
-    <view class="tr">
-        <view class="td">19</view>
-        <view class="td">3.8</view>
-        <view class="td">43.18</view>
-        <view class="td">42.18</view>
-    </view>
-    <view class="tr">
-        <view class="td">20</view>
-        <view class="td">4</view>
-        <view class="td">44.44</view>
-        <view class="td">45.44</view>
-    </view>
-    <view class="tr">
-        <view class="td">21</view>
-        <view class="td">4.2</view>
-        <view class="td">45.65</view>
-        <view class="td">44.65</view>
-    </view>
-    <view class="tr">
-        <view class="td">22</view>
-        <view class="td">4.4</view>
-        <view class="td">46.81</view>
-        <view class="td">47.81</view>
-    </view>
-    <view class="tr">
-        <view class="td">23</view>
-        <view class="td">4.6</view>
-        <view class="td">47.92</view>
-        <view class="td">46.92</view>
-    </view>
-    <view class="tr">
-        <view class="td">24</view>
-        <view class="td">4.8</view>
-        <view class="td">48.98</view>
-        <view class="td">49.98</view>
-    </view>
-    <view class="tr">
-        <view class="td">25</view>
-        <view class="td">5</view>
-        <view class="td">50</view>
-        <view class="td">49</view>
-    </view>
-    <view class="tr">
-        <view class="td">26</view>
-        <view class="td">5.2</view>
-        <view class="td">50.98</view>
-        <view class="td">51.98</view>
-    </view>
-    <view class="tr">
-        <view class="td">27</view>
-        <view class="td">5.4</view>
-        <view class="td">51.92</view>
-        <view class="td">50.92</view>
-    </view>
-    <view class="tr">
-        <view class="td">28</view>
-        <view class="td">5.6</view>
-        <view class="td">52.83</view>
-        <view class="td">53.83</view>
-    </view>
-    <view class="tr">
-        <view class="td">29</view>
-        <view class="td">5.8</view>
-        <view class="td">53.7</view>
-        <view class="td">52.7</view>
-    </view>
-    <view class="tr">
-        <view class="td">30</view>
-        <view class="td">6</view>
-        <view class="td">54.55</view>
-        <view class="td">55.55</view>
+    <view wx:key="{{item[0]}}" wx:for="{{days[currentDay].rawData}}" class="tr">
+        <view class="td">{{item[0]}}</view>
+        <view class="td">{{item[1]}}</view>
+        <view class="td">{{item[2]}}</view>
+        <view class="td">{{item[3]}}</view>
     </view>
 </scroll-view>
+<view class="box-header" data-box-index="1" bindtap="tapBoxHeader" >
+    <text>散点图和拟合曲线</text>
+</view>
+<view wx:if="{{boxesVisible[1]}}">
+    <view class="imagebox">
+        <image src="{{days[currentDay].graph}}"></image>
+    </view>
+</view>
+
+<view class="box-header" data-box-index="2" bindtap="tapBoxHeader" >
+    <text>模型参数及正演计算器</text>
+</view>
+<view wx:if="{{boxesVisible[2]}}">
+    <view class="cell-title">
+        参数 a
+    </view>
+    <view class="cell-input">
+        {{days[currentDay].parameters.a}}
+    </view>
+    <view class="cell-title">
+        参数 b
+    </view>
+    <view class="cell-input">
+        {{days[currentDay].parameters.b}}
+    </view>
+    <view class="cell-title">
+        输入最大沉降 s
+    </view>
+    <view class="cell-input">
+        <input type="digit" bindinput="inputParameter" value="0" placeholder="最大沉降 s"/>
+    </view>
+    <view class="cell-title">
+        输出最大荷载 p
+    </view>
+    <view class="cell-input">
+        <text>{{calculator.p}}</text>
+    </view>
+</view>
