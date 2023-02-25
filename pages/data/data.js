@@ -312,8 +312,8 @@ Page({
                 ],
                 graph: "/image/graph/1.png",
                 parameters: {
-                    a: 10,
-                    b: 20
+                    a: 0.005,
+                    b: 0.1
                 }
             },
             {
